@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Express Demo!</h1>
+    <div>
+        <input type="text" name="character-name" id="character-name">
+        <input type="text" name="show-name" id="show-name">
+        <input type="text" name="network-name" id="network-name">
+        <button type="button" onclick="sendCharacterData()">Save</button>
+    </div>
+    <button type="button" onclick="getCharacterData()" id="get-char">Get</button>
+
+    <table class="table" style="display: none;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Show</th>
+                <th>Network</th>
+            </tr>
+        </thead>
+        <tbody id="char-table">
+
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
